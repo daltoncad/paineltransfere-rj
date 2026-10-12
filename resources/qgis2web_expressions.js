@@ -767,13 +767,13 @@ function fnc_project_color(values, context) {
 
 
 function exp_label_RiodeJaneiro__0_eval_expression(context) {
-    // concat(NM_MUN, '\n', QTDexec)
+    // concat(NM_MUN, '\n', QtdEXEC)
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return fnc_concat([feature.get('NM_MUN') ,'\n',feature.get('QTDexec') ], context);
+        return fnc_concat([feature.get('NM_MUN') ,'\n',feature.get('QtdEXEC') ], context);
     } else {
-        return fnc_concat([feature.get('NM_MUN') ,'\n',feature.get('QTDexec') ], context);
+        return fnc_concat([feature.get('NM_MUN') ,'\n',feature.get('QtdEXEC') ], context);
     }
 }
